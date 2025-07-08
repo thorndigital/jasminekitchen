@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Kitchen | Authentic Mediterranean Cuisine, Kirkland WA</title>
+    <meta name="description" content="Experience the vibrant flavors of the Mediterranean at Jasmine Kitchen. Serving authentic, halal rotisserie chicken, gyros, shawarma, and kebabs in Kirkland, WA.">
+    <meta name="keywords" content="Mediterranean food, Greek food, Halal, Kirkland restaurant, Rotisserie Chicken, Gyros, Shawarma, Kifta, Falafel, Kebabs">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display for headings, Montserrat for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- OG Tags for Social Sharing -->
+    <meta property="og:title" content="Jasmine Kitchen | Authentic Mediterranean Cuisine, Kirkland WA" />
+    <meta property="og:description" content="Serving authentic, halal rotisserie chicken, gyros, shawarma, and kebabs." />
+    <meta property="og:image" content="https://placehold.co/1200x630/334155/fde68a?text=Jasmine+Kitchen" />
+    <meta property="og:url" content="https://jasminekitchenwa.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ChowNow Ordering Script -->
+    <script src="https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js" data-chownow-company-id="8192"></script>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold tracking-wider text-slate-800 font-playfair">JASMINE</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">Our Story</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-4">
+                 <a href="tel:425-820-8002" class="flex items-center space-x-2 text-sm font-semibold text-slate-600 hover:text-amber-600 transition-colors">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>(425) 820-8002</span>
+                </a>
+                <button class="primary-btn chownow-order-online">
+                    <i class="fa-solid fa-utensils mr-2"></i> Order Online
+                </button>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-2xl text-slate-800">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-hidden">
+        <div class="flex justify-end p-6">
+            <button id="close-mobile-menu" class="text-3xl text-slate-100">&times;</button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-6 text-2xl">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="menu.html" class="mobile-nav-link">Menu</a>
+            <a href="about.html" class="mobile-nav-link">Our Story</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <button class="primary-btn mt-8 chownow-order-online"><i class="fa-solid fa-utensils mr-2"></i> Order Online</button>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white min-h-[85vh] flex items-center relative">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold font-playfair mb-4 animate-fade-in-down">A Taste of the Sun</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-200 mb-8 animate-fade-in-up">Authentic Mediterranean flavors, crafted with passion and served with a smile. Welcome to our kitchen.</p>
+            <a href="menu.html" class="primary-btn-lg animate-fade-in-up animation-delay-300">Explore The Menu</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">From Our Family to Yours</h2>
+            <p class="section-subtitle">Since 2016, Jasmine Kitchen has been Kirkland's home for authentic Mediterranean rotisserie chicken, gyros, and salads. We believe in fresh ingredients, traditional recipes, and the joy of a shared meal.</p>
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1625938144392-128038c8f5a5?q=80&w=2070&auto=format&fit=crop" alt="Rotisserie Chicken" class="w-full h-56 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Rotisserie Chicken</h3>
+                        <p>Our specialty. Slow-roasted to perfection with a secret blend of Mediterranean spices.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1631782112426-009f443851b5?q=80&w=1974&auto=format&fit=crop" alt="Delicious Gyros" class="w-full h-56 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Classic Gyros</h3>
+                        <p>Tender, flavorful meat, fresh vegetables, and our creamy house-made tzatziki.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1551248429-40974011e723?q=80&w=1974&auto=format&fit=crop" alt="Fresh Salads" class="w-full h-56 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair font-bold mb-2">Vibrant Salads</h3>
+                        <p>Crisp, colorful, and tossed with our signature dressings for a taste of pure freshness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering CTA Section -->
+    <section class="bg-slate-800 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-playfair font-bold mb-4">Catering for Any Occasion</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto mb-8">Bring the authentic taste of Jasmine Kitchen to your next event. We offer convenient catering options through EZCater.</p>
+            <a href="https://www.ezcater.com/catering/pvt/jasmine-kitchen-1" target="_blank" class="primary-btn-lg">Order Catering</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="footer-title">JASMINE KITCHEN</h4>
+                    <p class="mt-2 text-slate-400">Authentic Mediterranean Cuisine</p>
+                     <div class="mt-4 flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com/Jasmine-Kitchen-949722091771116/?fref=ts" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="menu.html" class="footer-link">Menu</a></li>
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact & Hours</a></li>
+                        <li><a href="https://www.ezcater.com/catering/pvt/jasmine-kitchen-1" target="_blank" class="footer-link">Catering</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="mt-2 space-y-2 text-slate-400">
+                        <li class="flex items-center justify-center md:justify-start">
+                            <i class="fa-solid fa-location-dot w-5 mr-2"></i>
+                            <a href="https://maps.google.com/?q=11613+124th+Ave+NE,+Kirkland,+WA+98034" target="_blank" class="hover:text-amber-400">11613 124th Ave NE, Kirkland, WA</a>
+                        </li>
+                         <li class="flex items-center justify-center md:justify-start">
+                            <i class="fa-solid fa-phone w-5 mr-2"></i>
+                            <a href="tel:425-820-8002" class="hover:text-amber-400">(425) 820-8002</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                <p>&copy; 2024 Jasmine Kitchen. All Rights Reserved. Website Reimagined with ❤️.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
