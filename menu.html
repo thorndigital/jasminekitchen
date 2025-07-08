@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Jasmine Kitchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js" data-chownow-company-id="8192"></script>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold tracking-wider text-slate-800 font-playfair">JASMINE</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="about.html" class="nav-link">Our Story</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center space-x-4">
+                 <a href="tel:425-820-8002" class="flex items-center space-x-2 text-sm font-semibold text-slate-600 hover:text-amber-600 transition-colors">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>(425) 820-8002</span>
+                </a>
+                <button class="primary-btn chownow-order-online">
+                    <i class="fa-solid fa-utensils mr-2"></i> Order Online
+                </button>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-2xl text-slate-800">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+     <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-hidden">
+        <div class="flex justify-end p-6">
+            <button id="close-mobile-menu" class="text-3xl text-slate-100">&times;</button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-6 text-2xl">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="menu.html" class="mobile-nav-link">Menu</a>
+            <a href="about.html" class="mobile-nav-link">Our Story</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <button class="primary-btn mt-8 chownow-order-online"><i class="fa-solid fa-utensils mr-2"></i> Order Online</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="py-20 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="section-title">Our Menu</h1>
+                <p class="section-subtitle">Authentic recipes, fresh ingredients, and unforgettable flavor.</p>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="max-w-4xl mx-auto space-y-12">
+                
+                <!-- Category: Plates -->
+                <div>
+                    <h2 class="menu-category-title">Plates</h2>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Chicken Shawarma Plate</h3>
+                                <p class="menu-item-price">$18.99</p>
+                            </div>
+                            <p class="menu-item-description">Tender fire-grilled chicken shawarma, rice, hummus, pita, and garlic sauce.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Beef (Kifta) Kebab Plate</h3>
+                                <p class="menu-item-price">$19.99</p>
+                            </div>
+                            <p class="menu-item-description">Juicy ground beef kebabs, rice, hummus, pita, grilled onions, and tahini sauce.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Mediterranean Falafel Plate (VG)</h3>
+                                <p class="menu-item-price">$16.99</p>
+                            </div>
+                            <p class="menu-item-description">Crispy falafel over rice with hummus, pita, salad, and tahini sauce.</p>
+                        </div>
+                         <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Beef & Lamb Gyro Plate</h3>
+                                <p class="menu-item-price">$15.99</p>
+                            </div>
+                            <p class="menu-item-description">Classic gyro slices, grilled onions, tzatziki, hummus, rice, pita, and salad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Sandwiches & Wraps -->
+                <div>
+                    <h2 class="menu-category-title">Sandwiches & Wraps</h2>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Classic Gyro Sandwich</h3>
+                                <p class="menu-item-price">$11.99</p>
+                            </div>
+                            <p class="menu-item-description">Lamb & Beef Gyro, lettuce, tomatoes, onions, feta, and tzatziki in a warm pita.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Chicken Shawarma Wrap</h3>
+                                <p class="menu-item-price">$11.99</p>
+                            </div>
+                            <p class="menu-item-description">Grilled chicken, lettuce, tomatoes, pickles, hummus, and garlic sauce.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Falafel Vegan Sandwich (VG)</h3>
+                                <p class="menu-item-price">$10.49</p>
+                            </div>
+                            <p class="menu-item-description">Crispy falafel, lettuce, tomatoes, onions, cucumbers, and tahini sauce.</p>
+                        </div>
+                         <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Eggplant Wrap (VG)</h3>
+                                <p class="menu-item-price">$9.99</p>
+                            </div>
+                            <p class="menu-item-description">Fried eggplant, lettuce, tomatoes, pickles, hummus, and tahini sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Salads -->
+                <div>
+                    <h2 class="menu-category-title">Salads</h2>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                         <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Gyro Salad</h3>
+                                <p class="menu-item-price">$16.99</p>
+                            </div>
+                            <p class="menu-item-description">Gyro meat over fresh greens, tomatoes, onions, cucumbers, and feta with vinaigrette.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Greek Salad</h3>
+                                <p class="menu-item-price">$9.99</p>
+                            </div>
+                            <p class="menu-item-description">Lettuce, tomatoes, onions, Greek olives, and feta with Mediterranean vinaigrette.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Category: Sides -->
+                <div>
+                    <h2 class="menu-category-title">Sides</h2>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                         <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Greek Fries</h3>
+                                <p class="menu-item-price">$5.99</p>
+                            </div>
+                            <p class="menu-item-description">Crispy fries topped with garlic sauce and feta cheese.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="flex justify-between">
+                                <h3 class="menu-item-title">Hummus & Pita</h3>
+                                <p class="menu-item-price">$7.99</p>
+                            </div>
+                            <p class="menu-item-description">Our classic, creamy hummus served with warm pita bread.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="footer-title">JASMINE KITCHEN</h4>
+                    <p class="mt-2 text-slate-400">Authentic Mediterranean Cuisine</p>
+                     <div class="mt-4 flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com/Jasmine-Kitchen-949722091771116/?fref=ts" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="menu.html" class="footer-link">Menu</a></li>
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact & Hours</a></li>
+                        <li><a href="https://www.ezcater.com/catering/pvt/jasmine-kitchen-1" target="_blank" class="footer-link">Catering</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="mt-2 space-y-2 text-slate-400">
+                        <li class="flex items-center justify-center md:justify-start">
+                            <i class="fa-solid fa-location-dot w-5 mr-2"></i>
+                            <a href="https://maps.google.com/?q=11613+124th+Ave+NE,+Kirkland,+WA+98034" target="_blank" class="hover:text-amber-400">11613 124th Ave NE, Kirkland, WA</a>
+                        </li>
+                         <li class="flex items-center justify-center md:justify-start">
+                            <i class="fa-solid fa-phone w-5 mr-2"></i>
+                            <a href="tel:425-820-8002" class="hover:text-amber-400">(425) 820-8002</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                <p>&copy; 2024 Jasmine Kitchen. All Rights Reserved. Website Reimagined with ❤️.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
