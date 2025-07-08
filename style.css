@@ -23,10 +23,6 @@
         @apply text-slate-900 after:w-full;
     }
 
-    .mobile-nav-link {
-        @apply text-slate-100 hover:text-amber-300 transition-colors duration-300;
-    }
-
     .primary-btn {
         @apply bg-amber-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
     }
@@ -78,14 +74,6 @@
     }
     .prose h2 {
         @apply mb-3;
-    }
-
-    /* Mobile Menu animation */
-    .mobile-menu-hidden {
-        @apply fixed top-0 right-0 h-full w-full bg-slate-900/95 backdrop-blur-sm z-50 transform translate-x-full transition-transform duration-300 ease-in-out;
-    }
-    .mobile-menu-visible {
-        @apply translate-x-0;
     }
 
     /* Simple fade-in animations */
